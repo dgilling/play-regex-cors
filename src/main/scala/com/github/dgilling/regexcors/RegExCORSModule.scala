@@ -12,6 +12,5 @@ class RegExCORSModule(environment: Environment,
 
                           bind(classOf[CORSConfig]).toProvider(classOf[RegExCORSConfigProvider])
                           bind(classOf[CORSFilter]).toProvider(classOf[RegExCORSFilterProvider])
-                          bind(classOf[CORSFilter]).toProvider(classOf[CORSFilterProvider])
                         }
                       }
