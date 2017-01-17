@@ -11,6 +11,7 @@ class RegExCORSModule(environment: Environment,
                         def configure() = {
 
                           bind(classOf[CORSConfig]).toProvider(classOf[RegExCORSConfigProvider])
+                          bind(classOf[CORSFilter]).toProvider(classOf[RegExCORSFilterProvider])
                           bind(classOf[CORSFilter]).toProvider(classOf[CORSFilterProvider])
                         }
                       }
